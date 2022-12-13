@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('log version info') {
 			environment {
-                  HOME="C:/ProgramData/Jenkins/.jenkins"
+                  HOME="."
                 }
 			steps {
 				sh 'mvn --version'
